@@ -18,89 +18,87 @@ class Menu extends React.Component {
   render() {
     let menu = (
       <div className="menu">
-        <div>
-          <Container fluid>
-            <Row>
-              <Col>
-                <div className="menu__info">
-                  <Button className="dashboard-button">
-                    <HomeOutlinedIcon />
-                    <div>Dashboard</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+        <Container fluid>
+          <Row>
+            <Col>
+              <div className="menu__info">
+                <Button className="dashboard-button">
+                  <HomeOutlinedIcon />
+                  <div>Dashboard</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col>
-                <div className="menu__info">
-                  <Button className="dashboard-button-2">
-                    <AppsIcon />
-                    <div>Apps</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+            <Col>
+              <div className="menu__info">
+                <Button className="dashboard-button-2">
+                  <AppsIcon />
+                  <div>Apps</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col sm={1.2}>
-                <div className="menu__info">
-                  <Button className="dashboard-button-2">
-                    <LayersOutlinedIcon />
-                    <div>UI Elements</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+            <Col sm={1.2}>
+              <div className="menu__info">
+                <Button className="dashboard-button-2">
+                  <LayersOutlinedIcon />
+                  <div>UI Elements</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col sm={1.2}>
-                <div className="menu__info">
-                  <Button className="dashboard-button-2">
-                    <CreateOutlinedIcon />
-                    <div>Form & Tables</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+            <Col sm={1.2}>
+              <div className="menu__info">
+                <Button className="dashboard-button-2">
+                  <CreateOutlinedIcon />
+                  <div>Form & Tables</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col>
-                <div className="logout menu__info">
-                  <Button>
-                    <FileCopyOutlinedIcon />
-                    <div className="pages">Pages</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                  <ul>
-                    <li onClick={() => this.props.authLogout()}>
-                      <Button>Logout</Button>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
+            <Col>
+              <div className="logout menu__info">
+                <Button>
+                  <FileCopyOutlinedIcon />
+                  <div className="pages">Pages</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+                <ul>
+                  <li onClick={() => this.props.authLogout()}>
+                    <Button>Logout</Button>
+                  </li>
+                </ul>
+              </div>
+            </Col>
 
-              <Col sm={1.2}>
-                <div className="menu__info">
-                  <Button className="dashboard-button-2">
-                    <EqualizerOutlinedIcon />
-                    <div>Charts & Maps</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+            <Col sm={1.2}>
+              <div className="menu__info">
+                <Button className="dashboard-button-2">
+                  <EqualizerOutlinedIcon />
+                  <div>Charts & Maps</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col>
-                <div className="menu__info">
-                  <Button className="dashboard-button-2">
-                    <RadioButtonUncheckedOutlinedIcon />
-                    <div>Others</div>
-                    <ExpandMoreOutlinedIcon />
-                  </Button>
-                </div>
-              </Col>
+            <Col>
+              <div className="menu__info">
+                <Button className="dashboard-button-2">
+                  <RadioButtonUncheckedOutlinedIcon />
+                  <div>Others</div>
+                  <ExpandMoreOutlinedIcon />
+                </Button>
+              </div>
+            </Col>
 
-              <Col></Col>
-              <Col></Col>
-            </Row>
-          </Container>
-        </div>
+            <Col></Col>
+            <Col></Col>
+          </Row>
+        </Container>
       </div>
     );
 
