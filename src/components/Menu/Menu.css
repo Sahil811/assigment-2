@@ -3,35 +3,37 @@
   border-radius: 1rem;
   font-size: 1.4rem;
   min-height: 6rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu > button {
+  font-size: 1.4rem;
+  margin-left: 5rem;
+  height: 5rem;
 }
 
 .menu > div {
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-  background: white;
-  border-radius: 1rem;
-  padding: 1rem;
-  padding-top: 1, 5rem;
+  margin-left: 5rem;
 }
 
 .dashboard-button-2 {
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   text-transform: initial !important;
   margin-right: 1rem;
   background: white !important;
   color: black !important;
-  padding: 1rem 2rem !important;
+  padding: 0rem 1rem !important;
 }
 .dashboard-button-2:focus {
   outline-width: 0px;
 }
 
 .dashboard-button {
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   text-transform: initial !important;
-  margin-right: 1rem;
+  margin-left: 0 !important;
   background: #8075f0 !important;
   color: white !important;
   padding: 1rem 2rem !important;
@@ -83,8 +85,20 @@
   outline-width: 0px;
 }
 
-@media (max-width: 1275px) {
-  .menu__info {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .menu > button {
+    margin-left: 3rem;
+  }
+
+  .menu > div {
+    margin-left: 3rem;
+  }
+
+  .dashboard-button-2 {
+    font-size: 1.2rem !important;
+  }
+
+  .dashboard-button {
+    font-size: 1.2rem !important;
   }
 }
