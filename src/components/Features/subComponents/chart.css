@@ -1,0 +1,25 @@
+.LineChart1 {
+  height: 100%;
+  background: white;
+  margin: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 150ms ease-in;
+}
+
+.LineChart2 {
+  height: 100%;
+  background: white;
+  margin: 0.5rem 1rem;
+  margin-right: 0rem;
+  border-radius: 1rem;
+  transition: all 200ms ease-in;
+}
+
+.LineChart1:hover,
+.LineChart2:hover {
+  transform: scale(1.07);
+}
+
+.barChart {
+  margin-top: 4.5rem;
+}
