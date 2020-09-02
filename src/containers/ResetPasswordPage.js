@@ -44,6 +44,21 @@ class ResetPasswordPage extends React.Component {
     this.props.resetPassword(this.state);
   }
 
+  isFormValid = () => {
+    const {
+      email,
+      password,
+      contact,
+      dateOfBirth,
+      name,
+      passwordConfirm,
+    } = this.state;
+
+    return (
+      email && password && contact && dateOfBirth && name && passwordConfirm
+    );
+  };
+
   render() {
     let redirect = null;
     if (!!this.props.authenticate) {
@@ -59,6 +74,10 @@ class ResetPasswordPage extends React.Component {
     } = this.state;
 
     let form = "";
+    let loginButton = ["login-btn"];
+    if (!this.isFormValid()) {
+      loginButton = ["login-btn", "login-btn:disabled"].join(" ");
+    }
 
     if (!this.props.loading) {
       form = (
@@ -137,7 +156,11 @@ class ResetPasswordPage extends React.Component {
                 onChange={this.handleChange}
               />
             </div>
-            <button type="submit" id="login-btn">
+            <button
+              type="submit"
+              className={loginButton}
+              disabled={!this.isFormValid()}
+            >
               Reset Password
             </button>
           </form>
