@@ -8,7 +8,10 @@ import StarBorderIcon from "@material-ui/icons/StarBorder";
 import CropFreeIcon from "@material-ui/icons/CropFree";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import { Button } from "@material-ui/core";
+import { authLogout } from "../../actions/auth";
 import { connect } from "react-redux";
 import PropsTypes from "prop-types";
 
@@ -31,7 +34,7 @@ class Header extends React.Component {
               <CalendarTodayOutlinedIcon />
             </div>
             <div className="star">
-              <StarBorderIcon />
+              <StarBorderIcon fontSize="large" />
             </div>
           </div>
 
@@ -71,8 +74,16 @@ class Header extends React.Component {
                 <div className="status">Available</div>
               </div>
 
-              <div>
-                <AccountCircleIcon />
+              <div className="user-box">
+                <AccountCircleIcon fontSize="large" />
+                <ul>
+                  <li onClick={() => this.props.authLogout()}>
+                    <Button>
+                      <ExitToAppIcon />
+                      Logout
+                    </Button>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -94,4 +105,4 @@ const mapStateToProps = (state) => ({
   user: state.user.user,
 });
 
-export default connect(mapStateToProps, null)(Header);
+export default connect(mapStateToProps, { authLogout })(Header);

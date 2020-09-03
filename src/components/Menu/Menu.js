@@ -7,6 +7,7 @@ import CreateOutlinedIcon from "@material-ui/icons/CreateOutlined";
 import FileCopyOutlinedIcon from "@material-ui/icons/FileCopyOutlined";
 import EqualizerOutlinedIcon from "@material-ui/icons/EqualizerOutlined";
 import RadioButtonUncheckedOutlinedIcon from "@material-ui/icons/RadioButtonUncheckedOutlined";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Button } from "@material-ui/core";
 import { connect } from "react-redux";
@@ -47,7 +48,10 @@ class Menu extends React.Component {
           </Button>
           <ul>
             <li onClick={() => this.props.authLogout()}>
-              <Button>Logout</Button>
+              <Button>
+                <ExitToAppIcon />
+                Logout
+              </Button>
             </li>
           </ul>
         </div>

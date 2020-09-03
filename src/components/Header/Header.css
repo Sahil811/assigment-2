@@ -78,3 +78,24 @@
 .status {
   font-size: 1rem;
 }
+
+.user-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-box > ul {
+  position: absolute;
+  list-style: none;
+  top: 2rem;
+  left: -5rem;
+  display: none;
+}
+
+.user-box > ul > li {
+  width: 6rem;
+}
+
+.user-box:hover > ul {
+  display: block;
+}

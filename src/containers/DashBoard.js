@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
 import PropsTypes from "prop-types";
+import SettingsOutlinedIcon from "@material-ui/icons/SettingsOutlined";
 
 function DashBoard(props) {
   let redirect = null;
@@ -19,6 +20,12 @@ function DashBoard(props) {
       <React.Fragment>
         <Header />
         <main>
+          <div className="setting">
+            <SettingsOutlinedIcon
+              fontSize="medium"
+              style={{ marginTop: "7px" }}
+            />
+          </div>
           <Menu />
           <Features />
         </main>
