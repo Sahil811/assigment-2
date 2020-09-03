@@ -59,6 +59,7 @@ class LoginPage extends React.Component {
             <div className="input-container">
               <label className="label">Email: </label>
               <input
+                autoComplete="off"
                 type="email"
                 name="email"
                 className="input"
