@@ -134,19 +134,6 @@ class ResetPasswordPage extends React.Component {
                 className="input datepicker"
               />
             </div>
-            <div className="input-container change">
-              <label className="label">Date of Birth: </label>
-              <DatePicker
-                selected={dateOfBirth}
-                isClearable
-                showYearDropdown
-                scrollableYearDropdown
-                maxDate={new Date()}
-                name="dateOfBirth"
-                onChange={(value) => this.handleChangeDate(value)}
-                className="input"
-              />
-            </div>
 
             <div className="input-container change">
               <label className="label">New Password: </label>
