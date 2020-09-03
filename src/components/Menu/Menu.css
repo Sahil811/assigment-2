@@ -18,6 +18,10 @@
   margin-left: 5rem;
 }
 
+.menu > div > button:focus {
+  outline-width: 0;
+}
+
 .dashboard-button-2 {
   font-size: 1.4rem !important;
   text-transform: initial !important;
@@ -100,5 +104,30 @@
 
   .dashboard-button {
     font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu > div {
+    margin: 0 !important;
+  }
+
+  .dashboard-button-2 {
+    margin: 0 !important;
+  }
+  .dashboard-button {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    border-radius: 0 !important;
   }
 }

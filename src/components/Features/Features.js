@@ -79,38 +79,30 @@ class Features extends React.Component {
 
                 <Row>
                   <Col>
-                    <div>
-                      <div>Goal $100000</div>
-                      <div className="base purple">
-                        <div></div>
-                      </div>
+                    <div>Goal $100000</div>
+                    <div className="base purple">
+                      <div></div>
                     </div>
                   </Col>
                   <Col>
-                    <div>
-                      <div>Users 100K</div>
-                      <div className="base orange">
-                        <div></div>
-                      </div>
+                    <div>Users 100K</div>
+                    <div className="base orange">
+                      <div></div>
                     </div>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col>
-                    <div>
-                      <div>Retention: 90%</div>
-                      <div className="base red">
-                        <div></div>
-                      </div>
+                    <div>Retention: 90%</div>
+                    <div className="base red">
+                      <div></div>
                     </div>
                   </Col>
                   <Col>
-                    <div>
-                      <div>Duration: 1yr</div>
-                      <div className="base green">
-                        <div></div>
-                      </div>
+                    <div>Duration: 1yr</div>
+                    <div className="base green">
+                      <div></div>
                     </div>
                   </Col>
                 </Row>
@@ -159,7 +151,7 @@ class Features extends React.Component {
       </React.Fragment>
     );
 
-    return <div className="feature">{feature}</div>;
+    return <div className="feature">{feature} </div>;
   }
 }
 

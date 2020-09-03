@@ -15,7 +15,7 @@ import { authLogout } from "../../actions/auth";
 class Menu extends React.Component {
   render() {
     let menu = (
-      <div className="menu">
+      <nav className="menu">
         <Button className="dashboard-button">
           <HomeOutlinedIcon />
           <div>Dashboard</div>
@@ -62,7 +62,7 @@ class Menu extends React.Component {
           <div>Others</div>
           <ExpandMoreOutlinedIcon />
         </Button>
-      </div>
+      </nav>
     );
 
     return <div>{menu}</div>;

@@ -25,6 +25,12 @@ main {
   height: 100vh;
 }
 
+@media (max-width: 575px) {
+  main {
+    padding: 1rem 0;
+  }
+}
+
 .modal {
   display: flex;
   align-items: center;
